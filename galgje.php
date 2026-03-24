@@ -212,7 +212,8 @@ if (isset($_SESSION['woord'])) {
                                     $style = $isInWord ? 'bg-emerald-100 text-emerald-600 border-emerald-200' : 'bg-slate-100 text-slate-300 border-slate-200 opacity-40 cursor-not-allowed';
                                     echo "<span class='h-12 flex items-center justify-center rounded-xl font-black border-2 $style'>$char</span>";
                                 } else {
-                                    echo "<a href='galgje.php?letter=$char' class='letter-btn h-12 flex items-center justify-center rounded-xl bg-slate-800 text-white font-black hover:bg-indigo-600 border-b-4 border-slate-900'>$char</a>";
+                                    echo "<a href='galgje.php?letter=$char' class='letter-btn h-12 flex items-center justify-center rounded-xl
+                                    bg-slate-800 text-white font-black hover:bg-indigo-600 border-b-4 border-slate-900'>$char</a>";
                                 }
                             }
                             ?>
