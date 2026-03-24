@@ -71,9 +71,6 @@ if (isset($_SESSION['woord'])) {
             font-family: 'Inter', sans-serif;
         }
 
-        .iets-voor-linter {
-            color: black;
-        }
 
         @keyframes drawLine {
             from {
