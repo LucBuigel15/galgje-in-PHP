@@ -82,6 +82,8 @@ if (isset($_SESSION['woord'])) {
             }
         }
 
+        /* linter */
+
         .draw-anim {
             stroke-dasharray: 200;
             stroke-dashoffset: 200;
