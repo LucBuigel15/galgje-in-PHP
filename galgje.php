@@ -112,14 +112,20 @@ if (isset($_SESSION['woord'])) {
                 <h1 class="text-6xl font-black text-white mb-4 tracking-tighter italic">GALGJE<span class="text-indigo-500">.</span></h1>
                 <form method="post" class="space-y-6">
                     <input type="text" name="custom_word" placeholder="Kies een geheim woord..."
-                        class="w-full bg-slate-900/50 border border-slate-700 rounded-2xl py-5 px-8 text-white placeholder-slate-600 focus:outline-none focus:ring-4 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all text-center text-xl font-bold">
+                        class="w-full bg-slate-900/50 border border-slate-700 rounded-2xl py-5 px-8 text-white
+                        placeholder-slate-600 focus:outline-none
+                        focus:ring-4 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all text-center text-xl font-bold">
                     <div class="flex flex-col md:flex-row gap-4">
                         <button type="submit" name="action" value="custom"
-                            class="flex-1 bg-indigo-600 hover:bg-indigo-500 text-white font-black py-5 rounded-2xl shadow-xl shadow-indigo-500/30 transition-all active:scale-95 uppercase tracking-widest">
+                            class="flex-1 bg-indigo-600 hover:bg-indigo-500 text-white 
+                            font-black py-5 rounded-2xl shadow-xl shadow-indigo-500/30 transition-all active:scale-95 uppercase tracking-widest">
                             Start Game
                         </button>
                         <button type="submit" name="action" value="random"
-                            class="flex-1 bg-slate-700 hover:bg-slate-600 text-white font-black py-5 rounded-2xl shadow-lg transition-all active:scale-95 border border-slate-600 uppercase tracking-widest">
+                            class="flex-1 bg-slate-700 hover:bg-slate-600 text-white 
+                            font-black py-5 rounded-2xl 
+                            shadow-lg transition-all active:scale-95 
+                            border border-slate-600 uppercase tracking-widest">
                             Random Word
                         </button>
                     </div>
@@ -186,13 +192,15 @@ if (isset($_SESSION['woord'])) {
                     <?php if ($gewonnen) : ?>
                         <div class="bg-emerald-50 border-2 border-emerald-100 p-8 rounded-[2rem] mb-6">
                             <h3 class="text-emerald-600 font-black text-4xl mb-2">WAUW! 🎉</h3>
-                            <a href="galgje.php?reset=1" class="inline-block mt-4 bg-emerald-600 text-white px-10 py-4 rounded-2xl font-black hover:bg-emerald-500 uppercase">Next Round</a>
+                            <a href="galgje.php?reset=1" class="inline-block mt-4 bg-emerald-600 text-white 
+                            px-10 py-4 rounded-2xl font-black hover:bg-emerald-500 uppercase">Next Round</a>
                         </div>
                     <?php elseif ($verloren) : ?>
                         <div class="bg-rose-50 border-2 border-rose-100 p-8 rounded-[2rem] mb-6">
                             <h3 class="text-rose-600 font-black text-4xl mb-2">GAME OVER 💀</h3>
                             <p class="text-rose-400 font-bold mb-4 uppercase tracking-widest text-sm">Het woord was: <?php echo $_SESSION['woord']; ?></p>
-                            <a href="galgje.php?reset=1" class="inline-block bg-rose-600 text-white px-10 py-4 rounded-2xl font-black hover:bg-rose-500 uppercase">Try Again</a>
+                            <a href="galgje.php?reset=1" class="inline-block bg-rose-600 text-white 
+                            px-10 py-4 rounded-2xl font-black hover:bg-rose-500 uppercase">Try Again</a>
                         </div>
                     <?php else : ?>
                         <div class="grid grid-cols-7 md:grid-cols-9 gap-3">
